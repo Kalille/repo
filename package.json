@@ -1,0 +1,20 @@
+{
+  "name": "mcgills-lawncare",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm install --prefix client && npm run build --prefix client",
+    "clean": "rm -rf public",
+    "deploy": "cp -a client/build/. public/",
+    "heroku-postbuild": "npm run clean && npm run build && npm run deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
