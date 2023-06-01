@@ -1,7 +1,7 @@
-class UsersController < ApplicationController
+class Api::UsersController < ApplicationController
     skip_before_action :authorize, only: [:create, :index]
     def index
-            render json: User.all, include: [:appointments]
+       render json: User.all
     end
 
     def create

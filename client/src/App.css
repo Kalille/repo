@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,144 @@
   to {
     transform: rotate(360deg);
   }
+} */
+/* Reset default margin and padding */
+/* Reset default margin and padding */
+.homePage body, .homePage h1, .homePage h2, .homePage h3, .homePage p, .homePage ul, .homePage li {
+  margin: 0;
+  padding: 0;
 }
+
+/* Set a global font family and background color */
+.homePage body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Logo section styles */
+.homePage .logo {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Navigation styles */
+.App .navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.App .navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.homePage .navbar li {
+  margin: 0 10px;
+}
+
+.homePage .navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hero section styles */
+.homePage .hero {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.homePage .hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.homePage .hero p {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.homePage .hero button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Features section styles */
+.homePage .features {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.homePage .feature-card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.homePage .feature-card h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.homePage .feature-card p {
+  font-size: 18px;
+  color: #777;
+}
+
+/* About section styles */
+.homePage .about {
+  background-color: #f9f9f9;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.homePage .about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.homePage .about p {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+/* Testimonials section styles */
+.homePage .testimonials {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.homePage .testimonials .testimonial {
+  margin-bottom: 40px;
+}
+
+.homePage .testimonials .testimonial img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.homePage .testimonials .testimonial p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.homePage .testimonials .testimonial .author {
+  font-size: 14px;
+  color: #777;
+}
+
+/* /* Contact section styles */
