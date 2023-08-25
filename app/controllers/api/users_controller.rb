@@ -1,7 +1,7 @@
 class Api::UsersController < ApplicationController
     skip_before_action :authorize, only: [:create, :index]
     def index
-       render json: User.all
+       render json: User.all 
     end
 
     def create
@@ -10,6 +10,12 @@ class Api::UsersController < ApplicationController
         render json: user, status: :created
       end
 
+      def adminUsers
+        if @current_user.isAdmin?
+
+          render json: User.all
+        end
+      end
 
       def show
        render json: @current_user

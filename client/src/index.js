@@ -3,12 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import emailjs from "@emailjs/browser";
-import { BrowserRouter } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
+
+import { BrowserRouter as Router} from "react-router-dom";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
+    <Router>
     <App />
     <script
   type="text/javascript"
@@ -18,7 +23,8 @@ root.render(
   ( function(){emailjs.init("YDI0u74rcgGXbO-JB")})();
 </script>
     Hello
-  </React.StrictMode>
+    </Router>
+  // {/* </React.StrictMode> */}
 );
 
 // If you want to start measuring performance in your app, pass a function
