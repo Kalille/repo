@@ -3,13 +3,14 @@ import About from "./About";
 import image1 from '../images/IMG_7066.jpg';
 import image2 from '../images/20230416_104038.jpg';
 import image3 from '../images/20230423_122158.jpg'
-
+import Footer from './/footer.js'; 
 
 const Home=()=>{
 
 
     return(
         <div>
+          <br/>
         {/* Your other content above the carousel */}
         <div className="carousel-container">
         <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
@@ -41,6 +42,13 @@ const Home=()=>{
       </div>
         </div>
         {/* Your other content below the carousel */} check out my work
+        <div className="image-container">
+      {/* <img src={image1} alt="Pic 1 loading..."/>
+      <img src={image2} alt="Pic 2 loading..."/>
+      <img src={image3} alt="Pic  3loading..."/> */}
+     
+        </div>
+        <Footer/>
       </div>
   
     )

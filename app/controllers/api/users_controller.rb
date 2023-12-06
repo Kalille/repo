@@ -1,7 +1,7 @@
 class Api::UsersController < ApplicationController
-    skip_before_action :authorize, only: [:create, :index]
+    skip_before_action :authorize, only: [:show, :create, :index]
     def index
-       render json: User.all 
+       render json: User.all, include: [:appointments]
     end
 
     def create
@@ -18,7 +18,8 @@ class Api::UsersController < ApplicationController
       end
 
       def show
-       render json: @current_user
+        user = User.find_by(id: params[:id])
+       render json: user, include: [:appointments]
       end
 
       private

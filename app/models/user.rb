@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
 #   devise :database_authenticatable, :registerable,
@@ -14,6 +15,13 @@ class User < ApplicationRecord
     #      self.firstName[0].capitalize && self.lastName[0].capitalize
     #   end
     # end
+# def screen_name(first_name, last_name)
+# "#{first} #{last}"
+
+# end
+
+
+
     def image_url
         Rails.application.routes.url_helpers.url_for(image) if image.attached? 
     end
